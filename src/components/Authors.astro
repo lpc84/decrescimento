@@ -1,0 +1,35 @@
+---
+export interface Props {
+  authors?: string[];
+}
+
+const { authors } = Astro.props;
+---
+
+<div>
+  <h4>Autores</h4>
+  {
+    authors?.map((author) => (
+      <img
+        onclick={`location.href = \`/members/${author}\``}
+        src={`/members/${author}.png`}
+      />
+    ))
+  }
+</div>
+
+<style>
+  div {
+    text-align: center;
+  }
+  img {
+    justify-items: center;
+    align-items: center;
+    width: 4em;
+    height: 4em;
+    border-radius: 2em;
+    object-fit: cover;
+    border: 2px solid white;
+    margin-right: -0.5em;
+  }
+</style>

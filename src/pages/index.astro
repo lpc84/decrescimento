@@ -1,22 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-const posts = await Astro.glob("../pages/posts/*.md");
-const nonDraftPosts = posts
-  .filter((post) => !post.frontmatter.draft)
-  .sort((a, b) => +("" + a.file).localeCompare(b.file));
+import PostList from "../components/PostList.astro";
+import { getCollection } from "astro:content";
+
+const allBlogPosts = await getCollection("posts");
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <h1>Rede para o Decrescimento</h1>
-    <ul role="list" class="link-card-grid">
-      {
-        nonDraftPosts.map((post) => (
-          <li>
-            <a href={post.url}>{post.frontmatter.title}</a>
-          </li>
-        ))
-      }
-    </ul>
-  </main>
-</Layout>
+<Layout title="Welcome to Astro." />

@@ -1,0 +1,32 @@
+---
+import { getEntry } from "astro:content";
+
+export interface Props {
+  slug: string | undefined;
+}
+
+const member = await getEntry("members", Astro.props.slug + ".md");
+
+const { Content } = await member.render();
+---
+
+<div class="member">
+  <h3><a>{member.data.name}</a></h3>
+  <img src={`/public/members/${member.slug}.png`} alt={member.data.name} />
+  <p><Content /></p>
+
+  <p>{member.data.from}</p>
+</div>
+
+<style>
+  img {
+    border-radius: 2em;
+    width: 4em;
+    height: 4em;
+    object-fit: cover;
+  }
+  .member {
+    margin: 0 auto;
+    text-align: center;
+  }
+</style>

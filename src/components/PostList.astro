@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+
+export interface Props {
+  posts: Array<{
+    slug: string;
+    data: {
+      title: string;
+    };
+  }>;
+}
+
+const { posts } = Astro.props;
+---
+
+<main>
+  <ul role="list" class="link-card-grid">
+    {
+      posts.map((post) => {
+        return (
+          <li>
+            <a href={"/posts/" + post.slug}>{post.data.title}</a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</main>
