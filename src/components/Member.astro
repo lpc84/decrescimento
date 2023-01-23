@@ -12,7 +12,7 @@ const { Content } = await member.render();
 
 <div class="member">
   <h3><a>{member.data.name}</a></h3>
-  <img src={`/public/members/${member.slug}.png`} alt={member.data.name} />
+  <img src={`/members/${member.slug}.png`} alt={member.data.name} />
   <p><Content /></p>
 
   <p>{member.data.from}</p>
