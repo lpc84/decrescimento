@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Post.astro
 authors: [guiser]
 title: Um ministro do ambiente que não entende o problema do lítio, devia ser ministro do ambiente?
 slug: um-ministro-do-ambiente-que-nao-entende-o-problema-do-litio-devia-ser-ministro-do-ambiente

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Post.astro
 title: A vereda
 slug: a-vereda-rede-para-o-decrescimento-contributos-para-uma-reflexao
 date_published: 2022-09-08T08:50:33.000Z

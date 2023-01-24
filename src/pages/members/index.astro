@@ -1,8 +1,36 @@
 ---
+import Member, { Props } from "../../components/Member.astro";
 import Layout from "../../layouts/Layout.astro";
-import MemberList from "../../components/MemberList.astro";
+
+export async function getStaticPaths() {
+  const members = await Astro.glob("../members/**/*.md");
+
+  return members.map((member) => ({
+    params: {
+      slug: member.frontmatter.slug,
+    },
+    props: {
+      member,
+    },
+  }));
+}
+
+const members = (await Astro.glob("./*.md")).map<Props>((m) => ({
+  frontmatter: {
+    name: m.frontmatter.name,
+    slug: m.frontmatter.slug,
+    from: m.frontmatter.from,
+    bio: m.frontmatter.bio,
+  },
+  url: m.url,
+  Content: m.Content,
+}));
 ---
 
-<Layout title="Artigos">
-  <MemberList />
+<Layout title="Membros">
+  <main>
+    <div class="grid">
+      {members.map((m) => <Member frontmatter={m.frontmatter} url={m.url} />)}
+    </div>
+  </main>
 </Layout>

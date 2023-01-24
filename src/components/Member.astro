@@ -1,21 +1,26 @@
 ---
-import { getEntry } from "astro:content";
+import type { AstroComponentFactory } from "astro/dist/runtime/server";
 
 export interface Props {
-  slug: string | undefined;
+  frontmatter: {
+    name: string;
+    slug: string;
+    from: string;
+    bio: string;
+  };
+  url: string | undefined;
 }
 
-const member = await getEntry("members", Astro.props.slug + ".md");
-
-const { Content } = await member.render();
+const { frontmatter, url } = Astro.props;
 ---
 
 <div class="member">
-  <h3><a>{member.data.name}</a></h3>
-  <img src={`/members/${member.slug}.png`} alt={member.data.name} />
-  <p><Content /></p>
+  <h3><a href={url}>{frontmatter.name}</a></h3>
+  <img src={`/members/${frontmatter.slug}.png`} alt={frontmatter.name} />
+  <p></p>
 
-  <p>{member.data.from}</p>
+  <p>{frontmatter.bio}</p>
+  <p>{frontmatter.from}</p>
 </div>
 
 <style>
