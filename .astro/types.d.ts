@@ -55,7 +55,60 @@ declare module 'astro:content' {
 	};
 
 	const entryMap: {
-		
+		"members": {
+"alcides.md": {
+  id: "alcides.md",
+  slug: "alcides",
+  body: string,
+  collection: "members",
+  data: InferEntrySchema<"members">
+},
+"guiser.md": {
+  id: "guiser.md",
+  slug: "guiser",
+  body: string,
+  collection: "members",
+  data: InferEntrySchema<"members">
+},
+},
+"posts": {
+"2021-05-23-um-ministro-do-ambiente-que-nao-entende-o-problema-do-litio-devia-ser-ministro-do-ambiente.md": {
+  id: "2021-05-23-um-ministro-do-ambiente-que-nao-entende-o-problema-do-litio-devia-ser-ministro-do-ambiente.md",
+  slug: "2021-05-23-um-ministro-do-ambiente-que-nao-entende-o-problema-do-litio-devia-ser-ministro-do-ambiente",
+  body: string,
+  collection: "posts",
+  data: InferEntrySchema<"posts">
+},
+"2022-06-25-o-caracol-verao-2022.md": {
+  id: "2022-06-25-o-caracol-verao-2022.md",
+  slug: "2022-06-25-o-caracol-verao-2022",
+  body: string,
+  collection: "posts",
+  data: InferEntrySchema<"posts">
+},
+"2022-08-04-crescer-ate-rebentar-videos-das-6-primeiras-sessoes.md": {
+  id: "2022-08-04-crescer-ate-rebentar-videos-das-6-primeiras-sessoes.md",
+  slug: "2022-08-04-crescer-ate-rebentar-videos-das-6-primeiras-sessoes",
+  body: string,
+  collection: "posts",
+  data: InferEntrySchema<"posts">
+},
+"2022-09-08-a-vereda-rede-para-o-decrescimento-contributos-para-uma-reflexao.md": {
+  id: "2022-09-08-a-vereda-rede-para-o-decrescimento-contributos-para-uma-reflexao.md",
+  slug: "2022-09-08-a-vereda-rede-para-o-decrescimento-contributos-para-uma-reflexao",
+  body: string,
+  collection: "posts",
+  data: InferEntrySchema<"posts">
+},
+"2022-09-09-o-caracol-rentree-2022.md": {
+  id: "2022-09-09-o-caracol-rentree-2022.md",
+  slug: "2022-09-09-o-caracol-rentree-2022",
+  body: string,
+  collection: "posts",
+  data: InferEntrySchema<"posts">
+},
+},
+
 	};
 
 	type ContentConfig = typeof import("../src/content/config");

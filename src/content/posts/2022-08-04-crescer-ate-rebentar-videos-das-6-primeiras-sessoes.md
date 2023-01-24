@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Post.astro
 title: Crescer até Rebentar? Vídeos das 6 primeiras sessões
 slug: crescer-ate-rebentar-videos-das-6-primeiras-sessoes
 date_published: 2022-08-04T16:23:47.000Z
@@ -7,7 +6,7 @@ date_updated: 2022-08-04T16:23:47.000Z
 tags: Limites-ao-Crescimento
 ---
 
-Disponibilizámos os endereços para aceder aos vídeos das seis primeiras sessões do Ciclo "Crescer até Rebentar?" (Vídeo), assim como _links_ para sinopses de cada sessão (Info). Para uma sinopse genérica sobre o Ciclo ver [aqui](https://www.decrescimento.pt/posts/crescer-ate-rebentar-50-anos-dos-limites-ao-crescimento/).
+Disponibilizámos os endereços para aceder aos vídeos das seis primeiras sessões do Ciclo "Crescer até Rebentar?" (Vídeo), assim como *links* para sinopses de cada sessão (Info). Para uma sinopse genérica sobre o Ciclo ver [aqui](https://www.decrescimento.pt/posts/crescer-ate-rebentar-50-anos-dos-limites-ao-crescimento/).
 
 **15 Jan 2022 | Crescimento como sistema é um problema | Biblioteca de Alcântara**:
 

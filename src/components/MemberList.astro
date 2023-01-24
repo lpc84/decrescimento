@@ -1,11 +1,11 @@
 ---
+import { getCollection } from "astro:content";
 import Member from "./Member.astro";
-
-const members = await Astro.glob("../pages/members/*.md");
+const members = await getCollection("members");
 ---
 
 <main>
   <div class="grid">
-    {members.map((m) => <Member frontmatter={m.frontmatter} url={m.url} />)}
+    {members.map((m) => <Member slug={m.slug} />)}
   </div>
 </main>
