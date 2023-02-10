@@ -1,5 +1,5 @@
 ---
-import { getCollection, getEntry } from "astro:content";
+import { getCollection, getEntryBySlug } from "astro:content";
 import Authors from "../../components/Authors.astro";
 import Layout from "../../layouts/Layout.astro";
 
@@ -9,15 +9,15 @@ export async function getStaticPaths() {
   }));
   return allBlogPosts;
 }
-const post = await getEntry("posts", Astro.params.slug + ".md");
+const post = await getEntryBySlug("posts", Astro.params.slug);
 
-const { Content } = await post.render();
+const { Content } = await post?.render();
 ---
 
-<Layout title={post.data.title}>
+<Layout title={post?.data.title || ""}>
   <article>
-    <header>{post.data.title}</header>
+    <header>{post?.data.title}</header>
     <Content />
-    <Authors authors={post.data.authors} />
+    <Authors authors={post?.data.authors} />
   </article>
 </Layout>

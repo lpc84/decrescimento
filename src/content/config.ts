@@ -10,7 +10,6 @@ const posts = defineCollection({
 const members = defineCollection({
   schema: z.object({
     name: z.string(),
-    slug: z.string(),
     from: z.string(),
   }),
 });

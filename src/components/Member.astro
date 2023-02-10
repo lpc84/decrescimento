@@ -1,18 +1,17 @@
 ---
-import { getEntry } from "astro:content";
+import { getEntryBySlug } from "astro:content";
 
 export interface Props {
-  slug: string | undefined;
+  slug: string;
 }
 
-const member = await getEntry("members", Astro.props.slug + ".md");
-
+const member = await getEntryBySlug("members", Astro.props.slug);
 const { Content } = await member.render();
 ---
 
 <div class="member">
-  <h3><a>{member.data.name}</a></h3>
-  <img src={`/members/${member.slug}.png`} alt={member.data.name} />
+  <h3><a href={`/members/${Astro.props.slug}`}>{member.data.name}</a></h3>
+  <img src={`/members/${Astro.props.slug}.png`} alt={member.data.name} />
   <p><Content /></p>
 
   <p>{member.data.from}</p>

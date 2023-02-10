@@ -30,17 +30,24 @@ declare module 'astro:content' {
 		input: BaseCollectionConfig<S>
 	): BaseCollectionConfig<S>;
 
-	export function getEntry<C extends keyof typeof entryMap, E extends keyof (typeof entryMap)[C]>(
-		collection: C,
-		entryKey: E
-	): Promise<(typeof entryMap)[C][E] & Render>;
-	export function getCollection<
+	type EntryMapKeys = keyof typeof entryMap;
+	type AllValuesOf<T> = T extends any ? T[keyof T] : never;
+	type ValidEntrySlug<C extends EntryMapKeys> = AllValuesOf<(typeof entryMap)[C]>['slug'];
+
+	export function getEntryBySlug<
 		C extends keyof typeof entryMap,
-		E extends keyof (typeof entryMap)[C]
+		E extends ValidEntrySlug<C> | (string & {})
 	>(
 		collection: C,
-		filter?: (data: (typeof entryMap)[C][E]) => boolean
-	): Promise<((typeof entryMap)[C][E] & Render)[]>;
+		// Note that this has to accept a regular string too, for SSR
+		entrySlug: E
+	): E extends ValidEntrySlug<C>
+		? Promise<CollectionEntry<C>>
+		: Promise<CollectionEntry<C> | undefined>;
+	export function getCollection<C extends keyof typeof entryMap>(
+		collection: C,
+		filter?: (data: CollectionEntry<C>) => boolean
+	): Promise<CollectionEntry<C>[]>;
 
 	type InferEntrySchema<C extends keyof typeof entryMap> = import('astro/zod').infer<
 		Required<ContentConfig['collections'][C]>['schema']
@@ -74,35 +81,35 @@ declare module 'astro:content' {
 "posts": {
 "2021-05-23-um-ministro-do-ambiente-que-nao-entende-o-problema-do-litio-devia-ser-ministro-do-ambiente.md": {
   id: "2021-05-23-um-ministro-do-ambiente-que-nao-entende-o-problema-do-litio-devia-ser-ministro-do-ambiente.md",
-  slug: "2021-05-23-um-ministro-do-ambiente-que-nao-entende-o-problema-do-litio-devia-ser-ministro-do-ambiente",
+  slug: "um-ministro-do-ambiente-que-nao-entende-o-problema-do-litio-devia-ser-ministro-do-ambiente",
   body: string,
   collection: "posts",
   data: InferEntrySchema<"posts">
 },
 "2022-06-25-o-caracol-verao-2022.md": {
   id: "2022-06-25-o-caracol-verao-2022.md",
-  slug: "2022-06-25-o-caracol-verao-2022",
+  slug: "o-caracol-verao-2022",
   body: string,
   collection: "posts",
   data: InferEntrySchema<"posts">
 },
 "2022-08-04-crescer-ate-rebentar-videos-das-6-primeiras-sessoes.md": {
   id: "2022-08-04-crescer-ate-rebentar-videos-das-6-primeiras-sessoes.md",
-  slug: "2022-08-04-crescer-ate-rebentar-videos-das-6-primeiras-sessoes",
+  slug: "crescer-ate-rebentar-videos-das-6-primeiras-sessoes",
   body: string,
   collection: "posts",
   data: InferEntrySchema<"posts">
 },
 "2022-09-08-a-vereda-rede-para-o-decrescimento-contributos-para-uma-reflexao.md": {
   id: "2022-09-08-a-vereda-rede-para-o-decrescimento-contributos-para-uma-reflexao.md",
-  slug: "2022-09-08-a-vereda-rede-para-o-decrescimento-contributos-para-uma-reflexao",
+  slug: "a-vereda-rede-para-o-decrescimento-contributos-para-uma-reflexao",
   body: string,
   collection: "posts",
   data: InferEntrySchema<"posts">
 },
 "2022-09-09-o-caracol-rentree-2022.md": {
   id: "2022-09-09-o-caracol-rentree-2022.md",
-  slug: "2022-09-09-o-caracol-rentree-2022",
+  slug: "o-caracol-rentree-2022",
   body: string,
   collection: "posts",
   data: InferEntrySchema<"posts">
