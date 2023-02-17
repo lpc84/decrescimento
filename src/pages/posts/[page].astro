@@ -12,7 +12,7 @@ export async function getStaticPaths({ paginate }) {
       title: post.data.title,
     },
   }));
-  return paginate(allBlogPosts, { pageSize: 2 });
+  return paginate(allBlogPosts, { pageSize: 10 });
 }
 
 const { page } = Astro.props;

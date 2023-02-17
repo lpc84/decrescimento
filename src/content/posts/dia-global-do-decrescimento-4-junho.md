@@ -1,0 +1,10 @@
+---
+authors: [carlos]
+title: Dia Global do Decrescimento 4 de Junho
+slug: dia-global-do-decrescimento-4-junho
+date_published: 2022-05-30T19:35:50.000Z
+date_updated: 2022-06-17T12:30:09.000Z
+tags: Decrescimento não-às-minas!
+---
+
+“Uma vida boa para todos requer uma sociedade que vise o bem-estar de todas as pessoas e proteja a base ecológica da vida” lê-se em [https://degrowth.info/en/gdd-good-life-for-all](https://degrowth.info/en/gdd-good-life-for-all) e também nós (e muit@s outr@s pessoas/movimentos), com a Rede para o Decrescimento, temos vindo a investigar e a promover mudanças interiores, pessoais e coletivas, com vista a uma necessária transformação cultural na sociedade. Em especial neste ano de 2022 em que passam 50 anos sobre a publicação do relatório “Limites ao Crescimento” e em que temos vindo a convidar à reflexão mensal vários parceiros da sociedade civil para connosco analisarem o atual estado-do-mundo e as possibilidades de retomarmos um caminho bem mais convivial, sustentável e justo para tod@s e para o planeta. Assim, estamos tod@s convidad@s ao encontro nesse dia 4 de Junho já que, em Lisboa, prosseguem as sessões do ciclo ‘Crescer até Rebentar?’  [https://www.decrescimento.pt/events/crescer-ate-rebentar-or-6a-sessao:-dia-global-do-decrescimento-desperdicio.suficiencia.justica/](https://www.decrescimento.pt/events/crescer-ate-rebentar-or-6a-sessao:-dia-global-do-decrescimento-desperdicio.suficiencia.justica/) e, dessa forma, nos uniremos ao TODO nesse dia especial de ação global que, desde 2019, lembra ao mundo que há alternativas ao modelo de vida vigente (produtivista e consumista); conectando diversas iniciativas de âmbitos e regiões variadas em torno de propostas do movimento decrescentista com vista a uma vida boa para tod@s. Junta-te a nós e vem celebrar a desaceleração, a suficiência, a justiça social e climática… operando uma VIDA de saudável interdependência, de responsável autodeterminação e de permanente dignidade, para ti e para TOD@S.

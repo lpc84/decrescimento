@@ -1,0 +1,18 @@
+---
+authors: [luis]
+title: Núcleo de Lisboa
+slug: nucleo-de-lisboa
+date_published: 2021-03-27T11:33:58.000Z
+date_updated: 2021-03-27T12:50:12.000Z
+tags: Decrescimento não-às-minas!
+---
+Os Encontros sobre Decrescimento que tiveram lugar em Lisboa em Setembro de 2018, no GAIA e no ISCTE, e o I Congreso de Decrecemento que decorreu na Galiza em Outubro do mesmo ano onde participaram três membros do futuro núcleo, viriam a dar origem ao núcleo de Lisboa da Rede para o Decrescimento.
+As reuniões mensais regulares do núcleo iniciaram-se em Novembro de 2018. As reuniões têm decorrido na sede do Centro de Intervenção para o Desenvolvimento Amílcar Cabral (CIDAC) em Picoas que cedeu graciosamente as suas instalações para o efeito, tendo sido parceiro do núcleo de Lisboa da Rede desde então. Para além das 12 reuniões presenciais no CIDAC que decorreram até Março 2020, realizaram-se três reuniões deslocalizadas em colaboração com outras iniciativas, assim como três reuniões online (Abril e Maio 2020).
+
+As reuniões têm vindo a constituir uma oportunidade para discutir temas de interesse para o movimento decrescentista, planear e analisar as iniciativas promovidas pelos seus membros ou em que estes participam, e delinear estratégias futuras e propostas de atividades. Os encontros deslocalizados foram organizados em colaboração com as seguintes iniciativas locais: Centro Comunitário de Linda-a-Velha (CCLAV), Flor de Culturas (Alcanhões), Rede de Cidadania de Montemor e Cooperativa Integral Minga (Montemor-o-Novo). O núcleo promoveu ainda uma conversa com Carlos Taibo na Faculdade de Ciências Sociais e Humanas (FCSH) da Universidade Nova de Lisboa (23 Mar 2019), no contexto do lançamento da tradução portuguesa do seu livro “Colapso”. Tendo em conta a importância da ligação à Natureza e aos ecossistemas dos quais fazemos parte, e o papel da caminhada como forma privilegiada de conhecimento dos territórios, fez-se uma caminhada em Lisboa com piquenique e conversa-debate ao ar livre no Dia Global do Decrescimento em junho de 2019, e outra no Vale do Jamor em Novembro do mesmo ano, em conjunto com a Associação Vamos Salvar o Jamor. Em parceria com duas iniciativas locais, o núcleo organizou um encontro em Montemor-o-Novo que teve lugar em Fevereiro de 2020 e contou com a participação de mais de 50 pessoas (Decrescer para viver melhor). Organizou ainda o ciclo de três video-conferências ”Dias do Decrescimento” (23, 24 e 25 de Abril 2020) com sete oradores convidados (quatro dos quais externos à Rede) e que teve entre 50 e 70 participantes online. 
+
+Vários membros do núcleo de Lisboa da Rede têm participado em eventos que resultaram da rede de contactos e colaborações que se foram estabelecendo com outros colectivos e movimentos (ver lista completa na secção ‘Eventos e Iniciativas realizados’), participaram em acções públicas promovidas por outros colectivos (ATERRA e mobilizações climáticas) e colaboraram na redação de comunicados da Rede e de artigos para o Jornal Mapa.
+
+O núcleo de Lisboa tem vindo a desenvolver a sua organização e comunicação internas com a utilização de uma plataforma de trabalho online (Slack); procura ainda operacionalizar o seu funcionamento através da dinamização de grupos de trabalho – comunicação externa, organização interna, centro de recursos, inquérito e manifesto, projetos/ações (caminhadas, luta contra aeroportos, divulgação/mobilização, entre outros) que tem a possibilidade de utilizar a plataforma. Tratando-se de um ferramenta online, permite alargar a participação a membros de outras regiões em temas transversais a toda a Rede.
+
+Contacto: nucleo.lisboa@decrescimento.pt

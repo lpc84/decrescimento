@@ -19,6 +19,7 @@ const { posts } = Astro.props;
       posts.map((post) => {
         return (
           <li>
+            <img src={`/posts/${post.slug}/feature_image700.png`} alt="" />
             <a href={"/posts/" + post.slug}>{post.data.title}</a>
           </li>
         );
@@ -26,3 +27,14 @@ const { posts } = Astro.props;
     }
   </ul>
 </main>
+
+<style>
+  img {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #4610c0;
+    margin-bottom: 5px;
+    background-blend-mode: exclusion;
+  }
+</style>

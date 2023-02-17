@@ -17,7 +17,16 @@ const { Content } = await post?.render();
 <Layout title={post?.data.title || ""}>
   <article>
     <header>{post?.data.title}</header>
+    <img src={`/posts/${post?.slug}/feature_image700.png`} alt="" />
     <Content />
     <Authors authors={post?.data.authors} />
   </article>
 </Layout>
+
+<style>
+  img {
+    margin: 1em auto;
+    width: 700px;
+    display: flex;
+  }
+</style>
